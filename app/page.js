@@ -1,5 +1,20 @@
 import Image from "next/image";
 import HomePage from "./home/page";
+import { createMetadata } from "@/utils/metadata";
+
+export const metadata = createMetadata({
+  pageTitle: "CRUD Dashboard",
+  title: "CRUD Dashboard",
+  description:
+    "An IoT project connecting devices to the internet for data collection and analysis.",
+  keywords:
+    "IoT, Industrial IoT, Real-time monitoring, Cloud-based solutions, Predictive maintenance",
+  imageUrl: "next.svg",
+  imageWidth: 1200,
+  imageHeight: 800,
+  imageAlt: "CRUD Dashboard",
+  isHomePage: true,
+});
 
 export default function Home() {
   return (
